@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:background="@drawable/vitri"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <TextView
+            android:layout_weight="9"
+            android:text="Địa chỉ nhận hàng"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/editTextTen"
+        android:hint="Họ tên"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:inputType="phone"
+        android:layout_marginTop="20dp"
+        android:hint="Số điện thoại"
+        android:id="@+id/editTextSoDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:hint="Địa chỉ"
+        android:id="@+id/editTextDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonDongY"
+            android:layout_weight="1"
+            android:text="Đồng ý"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonHuy"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

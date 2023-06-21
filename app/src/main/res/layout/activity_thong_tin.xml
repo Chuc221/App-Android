@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThongTinActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayoutThongTin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="9"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarThongTin"
+                    android:background="@android:color/holo_blue_light"
+                    app:title="Thông tin"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+                </androidx.appcompat.widget.Toolbar>
+
+                <ImageView
+                    android:background="@drawable/background"
+                    android:id="@+id/imageViewThongTin"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+                </ImageView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Họ tên"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewHoTen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Họ tên"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Tên đăng nhập"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Tên đăng nhập"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Số điện thoại"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewSoDT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="19001009"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Địa chỉ"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@+id/textView2">
+
+                        <TextView
+                            android:id="@+id/textViewDiaChi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Địa chỉ gffdhggfhhhhfffffff fffff"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonDonMua"
+                    android:layout_margin="10dp"
+                    android:text="Đơn mua"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/buttonDangXuat"
+                    android:layout_margin="10dp"
+                    android:text="Đăng xuất"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationViewThongTin"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listviewLoaiSanPhamThongTin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

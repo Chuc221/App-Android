@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="ĐĂNG KÝ"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextUser"
+        android:hint="Tên đăng nhập"
+        android:textSize="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextPassword"
+        android:hint="Mật khẩu"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextPassword1"
+        android:hint="Nhập lại mật khẩu"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextTen"
+        android:hint="Họ tên"
+        android:textSize="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"
+        android:hint="Số điện thoại"
+        android:textSize="20dp"
+        android:id="@+id/editTextSoDT"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Địa chỉ"
+        android:textSize="20dp"
+        android:id="@+id/editTextDiaChi"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonDongY"
+            android:layout_weight="1"
+            android:text="Đăng ký"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonHuy"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

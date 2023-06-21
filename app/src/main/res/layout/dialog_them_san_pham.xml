@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="2dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/imageviewDialog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Tên điện thoại"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/textViewTenDialog"
+                android:textColor="@color/purple_700"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewGiaBanDialog"
+                android:text="Gía bán"
+                android:layout_margin="5dp"
+                android:textSize="17sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewNiemYetDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gía cũ"
+                android:layout_margin="5dp"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewSoLuongDialog"
+            android:text="Số lượng:"
+            android:textSize="20sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonTruDialog"
+            android:text="-"
+            android:textSize="20dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonSoDialog"
+            android:background="@null"
+            android:text="1"
+            android:textSize="20dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonCongDialog"
+            android:text="+"
+            android:textSize="20dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonThemDialog"
+            android:layout_weight="3"
+            android:text="Thêm vào giỏ hàng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonHuyDialog"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

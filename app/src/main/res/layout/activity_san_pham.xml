@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SanPhamActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayoutSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarSanPham"
+                android:background="@android:color/holo_blue_light"
+                app:title="Điện thoại"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:id="@+id/imageViewSanPham"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+            </ImageView>
+
+            <ListView
+                android:id="@+id/listViewSanPham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationViewSanPham"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listviewLoaiSanPham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
